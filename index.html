@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>2 Player Memory Game</title>
+    <title>Memory Card Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1>🧠 Memory Card Game</h1>
+    <div class="container">
+        <h1>🧠 Memory Card Game</h1>
 
-    <div class="info">
-        <h2 id="turn">Player 1 Turn</h2>
-        <p>Player 1 Score: <span id="p1">0</span></p>
-        <p>Player 2 Score: <span id="p2">0</span></p>
+        <div class="info">
+            <h2 id="turn">Player 1 Turn</h2>
+            <p>Player 1 Score: <span id="p1">0</span></p>
+            <p>Player 2 Score: <span id="p2">0</span></p>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <button onclick="resetGame()">Restart Game</button>
     </div>
 
-    <div class="game-board" id="gameBoard"></div>
-
-    <button onclick="resetGame()">Restart Game</button>
-
-    
+  
     <div class="popup" id="popup">
         <div class="popup-box">
             <h2 id="winnerText"></h2>
